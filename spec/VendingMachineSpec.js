@@ -23,6 +23,10 @@ describe("Vending Machine", function() {
 
   describe("Accepting coins", function() {
 
+    it("should verify a coin with a valid weight", function() {
+      const value = vendingMachine.verifyCoin(5.0);
+      expect(value).toEqual(0.05);
+    });
 
   });
 
