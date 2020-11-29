@@ -8,13 +8,22 @@ describe("Vending Machine", function() {
     vendingMachine = new VendingMachine();
   });
 
-  it("should exist", function() {
-    expect(vendingMachine).toBeTruthy();
+  describe("On power up", function() {
+
+    it("should exist", function() {
+      expect(vendingMachine).toBeTruthy();
+    });
+
+    it("should be in the power on state", function() {
+      expect(vendingMachine.amountIntroduced).toBe(0);
+      expect(vendingMachine.display).toEqual("Insert Coin");
+    });
+
   });
 
-  it("should be in the power on state", function() {
-    expect(vendingMachine.amountIntroduced).toBe(0);
-    expect(vendingMachine.display).toEqual("Insert Coin");
+  describe("Accepting coins", function() {
+
+
   });
 
 });
