@@ -65,6 +65,8 @@ describe("Vending Machine", function() {
       expect(vendingMachine.selectedProduct.price).toEqual(1.0);
     });
 
+  });
+
 
 
 });
