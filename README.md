@@ -1,5 +1,12 @@
 # Muscle Food Vending Machine Test
 
+## Software environment
+
+NodeJS| v14.15.1
+---|---
+NPM|6.14.9
+
+
 ## Installation
 
 `git clone git@github.com:solonian/vending_machine.git`
@@ -10,7 +17,7 @@ Once cloned from Github:
 
 `npm install`
 
-To run the tests
+To run the tests use
 
 `npm test`
 
