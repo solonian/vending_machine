@@ -14,4 +14,10 @@ To run the tests
 
 `npm test`
 
+Date of Test|29Nov2020
+---|---
+Time started|1345hrs
+Time Stopped|1550hrs
+
+
 
