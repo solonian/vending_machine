@@ -57,4 +57,14 @@ describe("Vending Machine", function() {
 
   });
 
+  describe("selecting products", function() {
+
+    it("should allow a product to be selected", function(){
+      vendingMachine.productSelected("COLA");
+      expect(vendingMachine.selectedProduct.name).toEqual("Cola");
+      expect(vendingMachine.selectedProduct.price).toEqual(1.0);
+    });
+
+
+
 });
