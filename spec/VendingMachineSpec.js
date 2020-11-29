@@ -28,6 +28,11 @@ describe("Vending Machine", function() {
       expect(value).toEqual(0.05);
     });
 
+    it("should verify a coin with a valid diameter", function() {
+      const value = vendingMachine.verifyCoin(21.21);
+      expect(value).toEqual(0.05);
+    });
+
   });
 
 });
