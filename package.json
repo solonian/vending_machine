@@ -1,0 +1,15 @@
+{
+  "name": "pnolan_musclefoods_vending_machine",
+  "version": "0.0.1",
+  "description": "Recruitment technical test for MuscleFoods",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "Paul Nolan",
+  "license": "Unlicense",
+  "devDependencies": {
+    "jasmine": "^3.6.3",
+    "jasmine-spec-reporter": "^6.0.0"
+  }
+}
