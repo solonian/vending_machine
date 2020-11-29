@@ -33,6 +33,28 @@ describe("Vending Machine", function() {
       expect(value).toEqual(0.05);
     });
 
+    it("should accept a valid coin", function() {
+      vendingMachine.acceptCoin(21.21);
+      expect(vendingMachine.amountIntroduced).toEqual(0.05);
+      expect(vendingMachine.display).toEqual("$0.05");
+    });
+
+    it("should accept multiple coins", function() {
+      vendingMachine.acceptCoin(21.21); // diameter of nickel = 0.05
+      vendingMachine.acceptCoin(5.67); // weight of quarter = 0.25
+      expect(vendingMachine.amountIntroduced).toEqual(0.30);
+    });
+
+    it("should reject invalid coins", function() {
+      vendingMachine.acceptCoin(2.5); //weight of penny
+      expect(vendingMachine.amountIntroduced).toEqual(0);
+    });
+
+    it("should reject unknown coins", function() {
+      vendingMachine.acceptCoin(99.99); //weight of penny
+      expect(vendingMachine.amountIntroduced).toEqual(0);
+    });
+
   });
 
 });
